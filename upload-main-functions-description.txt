@@ -1,0 +1,108 @@
+This file contains the description of the functions require to run the Continuous and Binary Benchmark for Two Type of The Distributions of The Endpoint: Normal and Students; and provided
+in the file "main-functions-upload.R".
+
+
+
+> function ``cont.benchmark.normal(mu,sigma,n,nsims,target.level,target.probability,seed=100)''
+
+computes the proportion of each dose selections by the Benchmark for Continuous Endpoint
+as proposed in Section 2 if the Endpoint has a Normal Distribution for a given sample size;
+The function uses the folowing parameters
+
++ ``mu'' is the vector of mean responses at each dose level
+
++ ``sigma'' is the variance [scalar or vector of length length(mu)] of the response at dose levels
+
++ ``n'' is the number of patients in the trial
+
++ ``nsims'' is number of simulations on which the benchmark is based 
+
++ ``target.level'' is the target response level, $\psi$
+
++ ``target.probability'' is the target probability level, $\gamma$ of getting the response of at least $\psi$
+
++ ``seed'' is used to reproduce the results
+
+
+
+> function ``binary.benchmark.normal(mu,sigma,n,nsims,target.level,target.probability,seed=100)''
+
+computes the proportion of each dose selections by the Benchmark for Binary Endpoint
+as proposed in Section 2 and described in Section 4.1 if the Underlying Endpoint has a Normal Distribution for a given sample size; The function uses the folowing parameters
+
++ ``mu'' is the vector of mean responses at each dose level
+
++ ``sigma'' is the variance [scalar or vector of length length(mu)] of the response at dose levels
+
++ ``n'' is the number of patients in the trial
+
++ ``nsims'' is number of simulations on which the benchmark is based 
+
++ ``target.level'' is the target response level, $\psi$
+
++ ``target.probability'' is the target probability level, $\gamma$ of getting the response of at least $\psi$
+
++ ``seed'' is used to reproduce the results
+
+
+> function ``cont.benchmark.student(mu,sigma,n,nsims,DF,target.level,target.probability,seed=100)
+
+computes the proportion of each dose selections by the Benchmark for Continuous Endpoint
+as proposed in Section 2 if the Endpoint has a non-standard Student's distribution for a given sample size; The function uses the folowing parameters
+
++ ``mu'' is the vector of mean responses at each dose level 
+
++ ``sigma'' is the variance [scalar or vector of length length(mu)] of the response at dose levels
+
++ ``n'' is the number of patients in the trial
+
++ ``nsims'' is number of simulations on which the benchmark is based 
+
++ ``DF'' is the number of degrees of freedom for the Standard Student RV
+
++ ``target.level'' is the target response level, $\psi$
+
++ ``target.probability'' is the target probability level, $\gamma$ of getting the response of at least $\psi$
+
++ ``seed'' is used to reproduce the results
+
+
+
+> function ``binary.benchmark.student(mu,sigma,n,nsims,DF,target.level,target.probability,seed=100)''
+
+computes the proportion of each dose selections by the Benchmark for Binary Endpoint
+as proposed in Section 2 and described in Section 4.1 if the Underlying Endpoint has a non-standard Student's distribution for a given sample size; The function uses the folowing parameters
+
++ ``mu'' is the vector of mean responses at each dose level 
+
++ ``sigma'' is the variance [scalar or vector of length length(mu)] of the response at dose levels
+
++ ``n'' is the number of patients in the trial
+
++ ``nsims'' is number of simulations on which the benchmark is based 
+
++ ``DF'' is the number of degrees of freedom for the Standard Student RV
+
++ ``target.level'' is the target response level, $\psi$
+
++ ``target.probability'' is the target probability level, $\gamma$ of getting the response of at least $\psi$
+
++ ``seed'' is used to reproduce the results
+
+> function ``emax.model(d,Emax,ED,lambda)'' 
+
+computes the response values under the Emax mode that is used in Section 3. The function uses
+the following parameters:
+
++ ``d'' is the dose
+
++ ``Emax'' is the maximum effected at which the Emax function plateaus
+
++ ``ED'' is the ED50, the dose at which it is assume that the 50% of maximum effect is attained
+
++ ``lambda'' is the parameters of the slope in Emax function.
+
+
+
+
+
