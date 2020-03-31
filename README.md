@@ -1,8 +1,8 @@
 The codes in this directory can be used to reproduce the results in the paper
 
-# P. Mozgunov & T. Jaki & X. Paoletti
 # "Using a Dose-Finding Benchmark to Quantify the Loss Incurred by Dichotomisation in Phase II Dose-Ranging Studies"
-
+by
+# P. Mozgunov & T. Jaki & X. Paoletti
 
 ######
 The file "main-functions-upload.R" implements the Continuous and Binary Benchmark and Two Type Distribution of The Endpoint: Normal and Student. This code should be run first as is.
